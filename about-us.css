@@ -1,0 +1,144 @@
+main div {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--dark-blue);
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main div h1 {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+main div p {
+    text-align: center;
+    margin-top: 50px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main div.merch {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--dark-blue);
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+}
+
+div.merch h1 {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    grid-column: span 3;
+}
+
+div.white-shirt img{
+    width: 75%;
+    height: 75%;
+}
+
+div.white-shirt h2, div.white-shirt h3 {
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+div.merch > div {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--white);
+    width: 90%;
+    margin: 1em 0;
+    
+}
+
+div.merch > div:hover {
+    background-color: var(--blue);
+}
+
+div.officers {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--dark-blue);
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    justify-items: center;
+}
+
+div.officers h1 {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    grid-column: span 3;
+}
+
+div.officers > button {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--white);
+    width: 15%;
+    margin: 1em 0;
+}
+
+div.officers > button:hover {
+    background-color: var(--blue);
+}
+
+#button-left {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#button-right {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#officer-image {
+    grid-column: 2;
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+}
+
+#officer-name {
+    grid-row: 2;
+    grid-column: span 3;
+}
+
+#officer-position {
+    grid-row: 4;
+    grid-column: span 3;
+}
+
+#officer-bio {
+    grid-row: 5;
+    grid-column: span 3;
+}

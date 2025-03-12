@@ -1,0 +1,65 @@
+main > div {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--dark-blue);
+    width: 75%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+div.schedule-table table, th, td{
+    border: 5px solid var(--dark-blue);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+table {
+    background-color: var(--white);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--blue);
+    border: 3px solid var(--white);
+}
+
+tr:nth-child(even) {
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+th {
+    font-size: 1.5em;
+}
+
+.instagram-button-image {
+    width: 80%;
+    height: auto;
+    transition: transform 0.2s;
+    align-self: first baseline;
+}
+
+.instagram-button-image:hover {
+    transform: scale(1.1);
+}
+
+.instagram {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 24%;
+    height: auto;
+    padding: 10px;
+}
