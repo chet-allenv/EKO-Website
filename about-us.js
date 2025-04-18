@@ -21,29 +21,22 @@ const officer3 = {
 
 let officers = [officer1, officer2, officer3];
 
-const leftButton = document.getElementById("button-left");
-const rightButton = document.getElementById("button-right");
-
-const officerName = document.getElementById("officer-name");
-const officerTitle = document.getElementById("officer-position");
-const officerBio = document.getElementById("officer-bio");
-const officerImg = document.getElementById("officer-image");
-
 updateOfficer();
 
-leftButton.addEventListener("click", () => {
-    officers.unshift(officers.pop());
-    updateOfficer();
-});
-
-rightButton.addEventListener("click", () => {
-    officers.push(officers.shift());
-    updateOfficer();
+$(document).ready(function() {
+    $("#button-left").on("click", function() {
+        officers.unshift(officers.pop());
+        updateOfficer();
+    });
+    $("#button-right").on("click", function() {
+        officers.push(officers.shift());
+        updateOfficer();
+    })
 });
 
 function updateOfficer() {
-    officerName.innerText = officers[0].name;
-    officerTitle.innerText = officers[0].position;
-    officerBio.innerText = officers[0].bio;
-    officerImg.src = officers[0].image;
+    $("#officer-name").html("<p>" + officers[0].name + "</p>");
+    $("#officer-position").html("<p>" + officers[0].position + "</p>");
+    $("#officer-bio").html("<p>" + officers[0].bio + "</p>");
+    $("#officer-image").attr("src", officers[0].image);
 }

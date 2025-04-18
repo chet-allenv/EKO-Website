@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EKO - Test</title>
+        <link rel="icon" type="image/png" href="res/favicon.png">
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Translator Plugin -->
+
+        <script>
+
+            $(document).ready(function() {
+                // Initialize the translator
+                $("#clicker").on("click", function() {
+                    console.log("Button clicked");
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <h1 data-translate="hello">Hello!</h1>
+        <button id="clicker">Click me!</button>
+    </body>
+
+</html>

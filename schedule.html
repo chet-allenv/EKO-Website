@@ -6,8 +6,23 @@
         <link rel="icon" type="image/png" href="res/favicon.png">
         <link rel="stylesheet" type="text/css" href="schedule.css">
         <link rel="stylesheet" type="text/css" href="global.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet" />
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- FullCalendar UMD (Global) JS -->
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+        <!-- Your script (no defer, loads after FullCalendar) -->
+        <script src="schedule.js"></script>
+
     </head>
     <body>
+
+        
+
         <header id="nav_bar">
             
             <img id="top-left-logo" src="res/logo_with_crest_blue_background.png" alt="EKO logo" height="50%" width="50%">
@@ -22,6 +37,22 @@
         </header>
 
         <main>
+
+            <div class="calendar-group">
+                <div class="calendar-wrapper">
+                    <div id="calendar"></div>
+                </div>
+    
+                <div class="information-wrapper">
+                    <div id="information">
+                        <h2>Information</h2>
+                        <p id="information_text">Hover over an event to see details</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--
             <div class="schedule-table">
                 <h2>Spring 2025 Schedule</h2>
                 <table>
@@ -50,13 +81,21 @@
                         <td>TBD</td>
                 </table>
             </div>
+        -->
+
             
+        
             <div class="instagram">
                 <a href="https://www.instagram.com/eko.uncc/#">
                     <img src="res/instagram_button.png" alt="Instagram button" class="instagram-button-image">
                 </a>
                 <p id="instagram_text">Follow us on Instagram for frequent schedule updates and potential changes!</p>
             </div>
+
+            
+        
+            
+        
         </main>
 
         <div class="space"></div>

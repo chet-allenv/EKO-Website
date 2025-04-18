@@ -44,20 +44,26 @@ const rightButton = document.getElementById("button-right");
 const image = document.getElementById("gallery-image");
 const imageCaption = document.getElementById("gallery-caption");
 
+$(document).ready(function() {
+    $("#button-left").on("click", function() {
+        images.unshift(images.pop());
+        updateImage();
+    });
+    $("#button-right").on("click", function() {
+        images.push(images.shift());
+        updateImage();
+    })
+});
+
 updateImage();
 
-leftButton.addEventListener("click", () => {
-    images.unshift(images.pop());
-    updateImage();
-});
-
-rightButton.addEventListener("click", () => {
-    images.push(images.shift());
-    updateImage();
-});
-
 function updateImage() {
+    $("#gallery-image").attr("src", images[0].getSrc());
+    $("#gallery-image").attr("alt", images[0].getAlt());
+    $("#gallery-caption").html(images[0].getCaption());
+    /*
     image.src = images[0].getSrc();
     image.alt = images[0].getAlt();
     imageCaption.innerText = images[0].getCaption();
+    */
 }

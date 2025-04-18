@@ -63,3 +63,28 @@ th {
     height: auto;
     padding: 10px;
 }
+
+.calendar-wrapper {
+    max-width: 800px;
+    padding: 1rem;
+}
+
+#calendar {
+    width: 600px;
+    height: 600px;
+    border: solid 2px var(--dark-blue);
+    background-color: var(--white);
+    color: black;
+    flex-grow: 1;
+}
+
+.information-wrapper {
+    max-width: 300px;
+}
+
+.calendar-group {
+    display: flex;
+    flex-direction: row;
+}
+
+
