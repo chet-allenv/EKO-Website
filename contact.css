@@ -1,0 +1,70 @@
+.social-button-image {
+    width: 75%;
+    height: auto;
+    transition: transform 0.2s;
+    align-self: first baseline;
+}
+
+.social-button-image:hover {
+    transform: scale(1.1);
+}
+
+.social-button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+    min-width: 25%;
+    min-height: 25%;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border-radius: 25px;
+}
+
+p {
+    text-align: center;
+}
+
+div.contact-info {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--white);
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+div.contact-info h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+div.contact-info p {
+    margin: 0;
+    padding: 10px;
+}
+
+div.contact-info a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+div.contact-info a:hover {
+    color: yellow;
+}
+
+div.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 50%;
+    margin: auto;
+}
