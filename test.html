@@ -5,44 +5,37 @@
         <title>EKO - Test</title>
         <link rel="icon" type="image/png" href="res/favicon.png">
 
+        <link rel="stylesheet" href="jquery-ui-1.14.1.custom\jquery-ui.min.css">
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-
-        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
-
-        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
-				
-        <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-
-
-
+        <!-- jQuery UI -->
+        <script src="jquery-ui-1.14.1.custom\jquery-ui.min.js"></script>
 
         <script>
-
-            $(document).ready(function() {
-                // Initialize the translator
-                $(".photos").slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                });
+            $(function() {
+                $("#tabs").tabs();
             });
         </script>
 
     </head>
     <body>
-        <div class="photos">
-            <div id="photo1">
-                <img src="res/eko-shirt.png" alt="EKO Shirt" style="width: 100%; height: auto;">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Tab 1</a></li>
+                <li><a href="#tabs-2">Tab 2</a></li>
+                <li><a href="#tabs-3">Tab 3</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Content for Tab 1.</p>
             </div>
-            <div id="photo2">
-                <img src="res/eko_table.jpg" alt="EKO Table" style="width: 100%; height: auto;">
+            <div id="tabs-2">
+                <p>Content for Tab 2.</p>
             </div>
-            <div>
-                <img src="res/tyropita.jpg" alt="Tyropita" style="width: 100%; height: auto;">
+            <div id="tabs-3">
+                <p>Content for Tab 3.</p>
             </div>
         </div>
     </body>

@@ -22,6 +22,18 @@
     margin-top: 10px;
 }
 
+#tabs {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 2px var(--dark-blue);
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
 #table-image img {
     width: auto;
     height: auto;
@@ -29,4 +41,8 @@
     max-height: 50%;
     min-width: 25%;
     min-height: 25%;
+}
+
+#yiasou-festival {
+    background-color: var(--white);
 }

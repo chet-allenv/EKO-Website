@@ -11,8 +11,8 @@
 }
 
 .photo-carousel {
-    max-width: 50%; /* or whatever fits your layout */
-    margin: 0 auto;   /* centers the whole carousel */
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .photo-carousel img {
