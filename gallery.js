@@ -1,3 +1,4 @@
+// HOLDS JQUERY PLUGIN IMPLEMENTATION
 class GalleryImage {
     constructor(src, alt, caption) {
         this.src = src;
@@ -38,32 +39,48 @@ const image5 = new GalleryImage("res/tyropita.jpg", "Tyropita", "Tyropita made f
 
 let images = [image1, image2, image3, image4, image5];
 
-const leftButton = document.getElementById("button-left");
-const rightButton = document.getElementById("button-right");
+createAndInsertImagesHTML();
 
-const image = document.getElementById("gallery-image");
-const imageCaption = document.getElementById("gallery-caption");
 
 $(document).ready(function() {
-    $("#button-left").on("click", function() {
-        images.unshift(images.pop());
-        updateImage();
-    });
-    $("#button-right").on("click", function() {
-        images.push(images.shift());
-        updateImage();
+    
+
+    $(".photo-carousel").slick({
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     })
+
+   $(".gallery-caption").html(`<h3>${images[0].getCaption()}</h3>`);
+
+    $(".photo-carousel").on("afterChange", function(event, slick, currentSlide) {
+        // Update the caption based on the current slide
+        const currentImage = images[currentSlide];
+        $(".gallery-caption").html(`<h3>${currentImage.getCaption()}</h3>`);
+    });
 });
 
-updateImage();
+function createAndInsertImagesHTML() {
+    let html = "";
+    let count = 0;
+    images.forEach((image) => {
+        html += `<div id="image-${count}"><img src="${image.getSrc()}" alt="${image.getAlt()}" title="${image.getCaption()}"></div>`;
+        count++;
+    });
+    $(".photo-carousel").html(html);
+}
 
+//updateImage();
+
+/*
 function updateImage() {
     $("#gallery-image").attr("src", images[0].getSrc());
     $("#gallery-image").attr("alt", images[0].getAlt());
     $("#gallery-caption").html(images[0].getCaption());
-    /*
+    
     image.src = images[0].getSrc();
     image.alt = images[0].getAlt();
     imageCaption.innerText = images[0].getCaption();
-    */
+    
 }
+*/

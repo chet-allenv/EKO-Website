@@ -8,22 +8,43 @@
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <!-- Translator Plugin -->
+
+
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+				
+        <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+
+
+
 
         <script>
 
             $(document).ready(function() {
                 // Initialize the translator
-                $("#clicker").on("click", function() {
-                    console.log("Button clicked");
+                $(".photos").slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
                 });
             });
         </script>
 
     </head>
     <body>
-        <h1 data-translate="hello">Hello!</h1>
-        <button id="clicker">Click me!</button>
+        <div class="photos">
+            <div id="photo1">
+                <img src="res/eko-shirt.png" alt="EKO Shirt" style="width: 100%; height: auto;">
+            </div>
+            <div id="photo2">
+                <img src="res/eko_table.jpg" alt="EKO Table" style="width: 100%; height: auto;">
+            </div>
+            <div>
+                <img src="res/tyropita.jpg" alt="Tyropita" style="width: 100%; height: auto;">
+            </div>
+        </div>
     </body>
 
 </html>

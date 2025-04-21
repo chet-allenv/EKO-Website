@@ -1,19 +1,5 @@
-button {
-    background-color: var(--dark-blue);
-    color: var(--white);
-    text-align: center;
-    padding: 1em;
-    border-radius: 25px;
-    border: solid 2px var(--white);
-    width: 25%;
-    margin: 1em 0;
-}
 
-button:hover {
-    background-color: var(--blue);
-}
-
-main div {
+.photo-carousel {
     background-color: var(--blue);
     color: var(--white);
     text-align: center;
@@ -22,22 +8,46 @@ main div {
     border: solid 2px var(--dark-blue);
     width: 75%;
     margin: auto;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    justify-items: center;
 }
 
-#gallery-image {
+.photo-carousel {
+    max-width: 50%; /* or whatever fits your layout */
+    margin: 0 auto;   /* centers the whole carousel */
+}
+
+.photo-carousel img {
     width: 100%;
     height: auto;
-    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
-#gallery-caption {
-    font-size: 1.5em;
-    grid-row: 2;
-    grid-column: span 3;
+#wrapper {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1em;
+    width: auto;
+    margin: 0 auto;
+}
+
+main {
+    padding: 0;
+}
+
+.gallery-caption {
     margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    margin-top: 1em;
+}
+
+.space {
+    padding: 0;
+    background-color: var(--dark-blue);
 }
