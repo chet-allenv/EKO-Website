@@ -17,12 +17,54 @@
         <script>
             $(function() {
                 $("#tabs").tabs();
+                $("#tabs-in-a-tab").tabs(); // Initialize tabs in a tab
+                $("#tabs").tabs("option", "active", 0); // Activate the first tab by default
+            });
+
+            function fetchJSONFile(path, callback) {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4 && request.status === 200) {
+                        var data = JSON.parse(request.responseText);
+                        if (callback) {
+                            callback(data);
+                        }
+                    }
+                };
+                request.open("GET", path);
+                request.send();
+            }
+
+            fetchJSONFile("test-ajax.json", function(data) {
+                console.log(data);
+                // You can manipulate the DOM or do something with the data here
+
+                for (var i = 0; i < data.length; i++) {
+                    var tabName = `tabs-${i + 1}`; // Use the index to create unique tab names
+                    var tabTitle = data[i].title; // Assuming the JSON has a 'title' field for the tab name
+                    var tabDescription = data[i].description;
+
+                    console.log(`${data[i].tab}: ${tabTitle}, ${tabDescription}`);
+
+                    
+
+                    var contentDiv = $(`<div id="${tabName}"><p>${tabDescription}</p></div>`);
+                    $("#tabs").append(contentDiv);
+
+                    var listItem = $(`<li><a href="#${tabName}">${tabTitle}</a></li>`);
+                    $("#tabs-names").append(listItem);
+                }
+
+                // Initialize the tabs after adding the new content
+                $("#tabs").tabs("refresh");
+                $("#tabs").tabs("option", "active", 0); // Activate the first tab by default
             });
         </script>
 
     </head>
     <body>
         <div id="tabs">
+            <!-- 
             <ul>
                 <li><a href="#tabs-1">Tab 1</a></li>
                 <li><a href="#tabs-2">Tab 2</a></li>
@@ -36,6 +78,31 @@
             </div>
             <div id="tabs-3">
                 <p>Content for Tab 3.</p>
+            </div>
+            -->
+            <ul id="tabs-names">
+                <!-- tab names will be generated here -->
+                <li><a href="#tab-in-a-tab">Tabs in a tab</a></li>
+            </ul>
+
+            <!-- Tab divs and content will be generated here -->
+            <div id="tab-in-a-tab">
+                <p>Content for the tab in a tab.</p>
+                <div id="tabs-in-a-tab">
+                    <ul>
+                        <li><a href="#tiat-1">Tab 1</a></li>
+                        <li><a href="#tiat-2">Tab 2</a></li>
+                        <li><a href="#tiat-3">Tab 3</a></li>
+                    </ul>
+                    <div id="tiat-1">
+                        <p>Content for Tab 1.</p>
+                    </div>
+                    <div id="tiat-2">
+                        <p>Content for Tab 2.</p>
+                    </div>
+                    <div id="tiat-3">
+                        <p>Content for Tab 3.</p>
+                    </div>
             </div>
         </div>
     </body>

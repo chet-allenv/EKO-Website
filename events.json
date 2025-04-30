@@ -1,0 +1,127 @@
+[
+    {
+        "tab": 1,
+        "title": "Greek Dance Night - Ζεϊμπέκικο και Ρεμπέτικο",
+        "description": "Join us for a night of Greek dance and music where we share how to dance the traditional Greek dance Ζεϊμπέκικο (Zey-BE-kiko) all to the rhythm of the Greek music of Ρεμπέτικο (Re-BE-tiko)!",
+        "date": "2025-05-06",
+        "start": "2025-05-06T18:30:00",
+        "end": "2025-05-06T21:00:00",
+        "location": "Robinson 118"
+    },
+    {
+        "tab": 2,
+        "title": "Από οι θεοί αρχαίοι σε Χριστός - How religion shaped the Greek culture, past and present",
+        "description": "Join us for a discussion on how religion shaped the Greek culture, past and present. We will discuss the ancient Greek gods and how they influenced the culture, as well as the impact of Christianity on modern Greek society.",
+        "date": "2025-05-08",
+        "start": "2025-05-08T17:30:00",
+        "end": "2025-05-08T19:00:00",
+        "location": "Student Union, 320B"
+    },
+    {
+        "tab": 3,
+        "title": "Το Αλφαβητάρι - The Greek Alphabet",
+        "description": "Join us for a fun and interactive session on the Greek alphabet! We will learn the letters, their sounds, and how to write them. This is a great opportunity to get familiar with the Greek language.",
+        "date": "2025-05-09",
+        "start": "2025-05-09T17:30:00",
+        "end": "2025-05-09T19:00:00",
+        "location": "Student Union, 320B"
+    },
+    {
+        "tab": 4,
+        "title": "Start of Summer Break!",
+        "description": "The summer break is here! Enjoy your time off and make the most of it!",
+        "date": "2025-5-10",
+        "start": "2025-05-10T00:00:00",
+        "location": "Student Union, 320B"
+    },
+    {
+        "tab": 5,
+        "title": "Potential Trip to Greece",
+        "description": "We are considering a trip to Greece! Stay tuned for more details.",
+        "date": "2025-6-23",
+        "start": "2025-06-23T14:00:00",
+        "end": "2025-06-23T16:00:00",
+        "location": "Virtual. Zoom link will be sent out to all members."
+    },
+    {
+        "tab": 6,
+        "title": "Interest Meeting #1",
+        "date": "2025-01-29",
+        "start": "2025-01-29T17:30:00",
+        "end": "2025-01-29T18:30:00",
+        "description": "Join us for our first interest meeting of the semester!",
+        "location": "Student Union, 340B"
+    },
+    {
+        "tab": 7,
+        "title": "Interest Meeting #2 and Alphabet Workshop",
+        "date": "2025-03-12",
+        "start": "2025-03-12T17:30:00",
+        "end": "2025-03-12T18:30:00",
+        "description": "Join us for our second interest meeting of the semester and learning the Greek Alphabet!",
+        "location": "Student Union, 266"
+    },
+    {
+        "tab": 8,
+        "title": "Greek Independance Day",
+        "date": "2025-03-25",
+        "description": "Celebrating Greek Independence Day!"
+    },
+    {
+        "tab": 9,
+        "title": "Orthodox Easter",
+        "date": "2025-04-20",
+        "description": "Celebrating Orthodox Easter!"
+    },
+    {
+        "tab": 10,
+        "title": "Meeting #3",
+        "date": "2025-04-9",
+        "start": "2025-04-09T17:30:00",
+        "end": "2025-04-09T18:30:00",
+        "description": "Join us for our third meeting of the semester!",
+        "location": "Student Union, 340B"
+    },
+    {
+        "tab": 11,
+        "title": "Meeting #4",
+        "date": "2025-04-23",
+        "start": "2025-04-23T17:30:00",
+        "end": "2025-04-23T18:30:00",
+        "description": "Join us for our fourth meeting of the semester!",
+        "location": "Student Union, 340B"
+    },
+    {
+        "tab": 12,
+        "title": "End of Semester Celebration",
+        "date": "2025-04-30",
+        "start": "2025-04-30T17:30:00",
+        "end": "2025-04-30T18:30:00",
+        "description": "Join us for our end of semester celebration!",
+        "location": "Student Union, 340B"
+    },
+    {
+        "tab": 13,
+        "title": "Good Friday",
+        "date": "2025-04-18",
+        "description": "Celebrating Good Friday!"
+    },
+    {
+        "tab": 14,
+        "title": "Palm Sunday",
+        "date": "2025-04-13",
+        "description": "Celebrating Palm Sunday!"
+    },
+    {
+        "tab": 15,
+        "title": "Great Saturday",
+        "date": "2025-04-19",
+        "description": "Celebrating Great Saturday!"
+    },
+    {
+        "tab": 16,
+        "title": "Protomagia",
+        "date": "2025-05-01",
+        "description": "Celebrating Protomagia!"
+    }
+]

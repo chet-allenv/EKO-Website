@@ -1,0 +1,32 @@
+[
+    {
+        "tab": 1,
+        "title": "Test AJAX",
+        "description": "This is a new description of the event!"
+    },
+    {
+        "tab": 2,
+        "title": "Test AJAX 2",
+        "description": "This is a description of the 2nd event!"
+    },
+    {
+        "tab": 3,
+        "title": "Test AJAX 3",
+        "description": "This is a description of the 3rd event!"
+    },
+    {
+        "tab": 4,
+        "title": "Test AJAX 4",
+        "description": "This is a description of the 4th event!"
+    },
+    {
+        "tab": 5,
+        "title": "Test AJAX 5",
+        "description": "This is a description of the 5th event!"
+    },
+    {
+        "tab": 6,
+        "title": "Test AJAX 6",
+        "description": "This is a description of the 6th event!"
+    }
+]

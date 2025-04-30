@@ -69,18 +69,3 @@ function createAndInsertImagesHTML() {
     });
     $(".photo-carousel").html(html);
 }
-
-//updateImage();
-
-/*
-function updateImage() {
-    $("#gallery-image").attr("src", images[0].getSrc());
-    $("#gallery-image").attr("alt", images[0].getAlt());
-    $("#gallery-caption").html(images[0].getCaption());
-    
-    image.src = images[0].getSrc();
-    image.alt = images[0].getAlt();
-    imageCaption.innerText = images[0].getCaption();
-    
-}
-*/
